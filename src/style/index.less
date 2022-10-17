@@ -1,0 +1,38 @@
+@import './component.less';
+
+:root,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  position: relative;
+  min-width: 800px;
+  max-width: 1280px;
+  width: 50%;
+  padding: 24px 48px;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  box-shadow: #eaeaea 0 2px 6px;
+
+  .main {
+    margin-top: 24px;
+    height: 420px;
+    overflow: auto;
+  }
+
+  .btn {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
