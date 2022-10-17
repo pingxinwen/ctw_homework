@@ -10,10 +10,10 @@ const Meal: FC = () => {
   const instance = Form.useFormInstance();
 
   useEffect(() => {
-    const meal = instance.getFieldValue('meal');
+    const meal:string = instance.getFieldValue('meal');
 
     return () => {
-      if (meal != instance.getFieldValue('meal')) {
+      if (meal !== instance.getFieldValue('meal')) {
         instance.setFieldValue('restaurant', undefined);
         instance.setFieldValue('dishes', undefined);
       }

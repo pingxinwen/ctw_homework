@@ -40,7 +40,6 @@ function App() {
         setStep(s => s + 1);
       })
       .catch(e => {
-        alert('error');
         console.log(e);
       });
   };
@@ -71,12 +70,12 @@ function App() {
         <div className="btn">
           {step > 0 && <Button onClick={prevStep}>Prev</Button>}
           {step < items.length - 1 && (
-            <Button type="primary" onClick={nextStep}>
+            <Button type="primary" className='primary' onClick={nextStep}>
               Next
             </Button>
           )}
           {step === items.length - 1 && (
-            <Button type="primary" htmlType="submit">
+            <Button type="primary" className='primary' htmlType="submit">
               Submit
             </Button>
           )}
